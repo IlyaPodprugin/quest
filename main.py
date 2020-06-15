@@ -1,5 +1,4 @@
 import functions
-from functions import login, password
 import messages
 
 

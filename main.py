@@ -8,7 +8,7 @@ def check_user_command():
     if user_command == 'reg':
         print(functions.registration())
     elif user_command == 'auth':
-        print(functions.authorisation(login, password))
+        print(functions.authorisation())
     check_user_command()
 
 print(messages.hello_message)

@@ -4,6 +4,8 @@ password = ''
 
 
 def registration():
+    global login
+    global password
     login = input('Придумайте логин: ')
     password = input('Придумайте пароль: ')
     print(login, password)
@@ -12,7 +14,9 @@ def registration():
     return messages.registration_error_message
 
 
-def authorisation(login, password):
+def authorisation():
+    global login
+    global password
     print(login, password)
     if login == input('Введите логин: '):
         if password == input('Введите пароль: '):

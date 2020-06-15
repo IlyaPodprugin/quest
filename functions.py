@@ -1,6 +1,6 @@
 import messages
-login = input()
-password = input()
+login = ''
+password = ''
 
 
 def registration():

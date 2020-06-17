@@ -10,5 +10,5 @@ def check_user_command():
         print(functions.authorisation())
     check_user_command()
 
-print(messages.hello_message)
+print(messages.hello)
 check_user_command()

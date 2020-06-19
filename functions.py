@@ -10,9 +10,11 @@ def registration():
     password = input('Придумайте пароль: ')
     # print(login, password)
     if input('Подтвердите пароль: ') == password:
-        return messages.successful_registration
+        print(messages.successful_registration)
+        return
     print(messages.wrong_password)
-    return registration()
+    registration()
+    return
 
 
 def authorisation():
@@ -21,12 +23,15 @@ def authorisation():
     # print(login, password)
     if login == input('Введите логин: '):
         if password == input('Введите пароль: '):
-            return messages.successful_authorisation
+            print(messages.successful_authorisation)
+            return
         print(messages.wrong_password)
-        return authorisation()
+        authorisation()
+        return
     print(messages.wrong_login)
-    return authorisation()
+    authorisation()
+    return
 
 
-# def micro_game():
-    
+# def random_password_generator():
+    # some code
